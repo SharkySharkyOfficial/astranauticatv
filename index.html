@@ -81,29 +81,9 @@
   <section class="stream‑embed">
     <h2>Live Now / Recent VOD</h2>
     <!-- If you want, embed the Twitch stream iframe, example below: -->
-    <html>
-  <body>
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
-
-    <!-- Load the Twitch embed JavaScript file -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "Astranauticatv",
-        // Only needed if this page is going to be embedded on other websites
-        parent: ["embed.example.com", "othersite.example.com"]
-      });
-    </script>
-  </body>
-</html>
+    <iframesrc="https://player.twitch.tv/?<channel, video, or collection>&parent: ["embed.example.com", "othersite.example.com"]"height="<height>"width="<width>"allowfullscreen></iframe>
     <p>If the stream isn’t live, check the channel for the latest VODs!</p>
   </section>
-
   <section class="extras">
     <h2>Why tune in?</h2>
     <p>
@@ -117,6 +97,7 @@
 
 </body>
 </html>
+
 
 
 
